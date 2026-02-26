@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 3</title>
+<style>
+body{font-family:Arial;text-align:center;background:#fbc2eb;padding:40px;}
+.box{background:white;padding:25px;border-radius:12px;max-width:400px;margin:auto;}
+input,button{padding:10px;margin-top:10px;width:90%;}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>Riddle 3</h2>
+<p>What runs but never walks?</p>
+<input id="ans">
+<button onclick="check()">Submit</button>
+</div>
+
+<script>
+function check(){
+let a=document.getElementById("ans").value.toLowerCase();
+if(a==="river"){window.location="riddle4.html";}
+else{alert("Wrong answer!");}
+}
+</script>
+</body>
+</html>
